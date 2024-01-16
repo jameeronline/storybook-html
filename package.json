@@ -1,0 +1,38 @@
+{
+  "name": "stroybook-html",
+  "version": "1.0.0",
+  "description": "simple html components documentation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "keywords": [
+    "storybook",
+    "html",
+    "ui",
+    "library",
+    "documentation",
+    "design",
+    "system"
+  ],
+  "author": "Jamal Mohamed Ameer",
+  "license": "ISC",
+  "devDependencies": {
+    "@storybook/addon-essentials": "^7.6.8",
+    "@storybook/addon-interactions": "^7.6.8",
+    "@storybook/addon-links": "^7.6.8",
+    "@storybook/blocks": "^7.6.8",
+    "@storybook/html": "^7.6.8",
+    "@storybook/html-vite": "^7.6.8",
+    "@storybook/test": "^7.6.8",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.69.7",
+    "storybook": "^7.6.8"
+  },
+  "dependencies": {
+    "classnames": "^2.5.1"
+  }
+}
