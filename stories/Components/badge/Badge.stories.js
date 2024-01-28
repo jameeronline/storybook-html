@@ -2,7 +2,7 @@ import { createBadge } from "./Badge";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories
 export default {
-  title: "Example/Badge",
+  title: "Components/Badge",
   tags: ["autodocs"],
   render: ({ label, ...args }) => {
     // You can either use a function to create DOM elements or use a plain html string!
@@ -10,7 +10,7 @@ export default {
     return createBadge({ label, ...args });
   },
   argTypes: {
-    backgroundColor: { control: "color" },
+    //backgroundColor: { control: "color" },
     label: { control: "text" },
     //onClick: { action: "onClick" },
     type: {
@@ -28,41 +28,41 @@ export default {
 export const Primary = {
   args: {
     type: "primary",
-    label: "Button",
+    label: "New",
   },
 };
 
 export const Secondary = {
   args: {
     type: "secondary",
-    label: "Button",
+    label: "New",
   },
 };
 
 export const Ghost = {
   args: {
     type: "ghost",
-    label: "Button",
+    label: "New",
   },
 };
 
 export const Large = {
   args: {
     size: "large",
-    label: "Button",
+    label: "New",
   },
 };
 
 export const Small = {
   args: {
     size: "small",
-    label: "Button",
+    label: "New",
   },
 };
 
 export const Xlarge = {
   args: {
     size: "xlarge",
-    label: "Button",
+    label: "New",
   },
 };

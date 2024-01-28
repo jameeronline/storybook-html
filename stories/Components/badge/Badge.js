@@ -11,15 +11,13 @@ export const createBadge = ({
   badge.innerText = label;
   //badge.addEventListener("click", onClick);
 
-  const mode =
-    type === "primary"
-      ? "storybook-badge--primary"
-      : type === "secondary"
-      ? "storybook-badge--secondary"
-      : "storybook-badge--ghost";
-  badge.className = ["storybook-badge", `storybook-badge--${size}`, mode].join(
-    " "
-  );
+  // const mode =
+  //   type === "primary"
+  //     ? "storybook-badge--primary"
+  //     : type === "secondary"
+  //     ? "storybook-badge--secondary"
+  //     : "storybook-badge--ghost";
+  badge.className = ["badge", "text-bg-danger"].join(" ");
 
   //badge.style.backgroundColor = backgroundColor;
 

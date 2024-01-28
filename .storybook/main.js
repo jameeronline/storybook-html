@@ -13,6 +13,7 @@ const config = {
     name: "@storybook/html-vite",
     options: {},
   },
+  staticDirs: ["../src/assets"],
   docs: {
     autodocs: "tag",
   },
