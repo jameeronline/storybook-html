@@ -1,0 +1,1 @@
+const e={parameters:{backgrounds:{values:[{name:"light",value:"#fff"},{name:"dark",value:"#333"}]},actions:{argTypesRegex:"^on[A-Z].*"},controls:{expanded:!0,sort:"requiredFirst",matchers:{color:/(background|color)$/i,date:/Date$/i}}}};export{e as default};
