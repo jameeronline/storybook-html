@@ -7,10 +7,14 @@ export default {
   argTypes: {
     primaryBtnLbl: { control: { type: "text" } },
     secondaryBtnLbl: { control: { type: "text" } },
+    confirmPassword: {
+      control: { type: "boolean" },
+    },
   },
   args: {
     primaryBtnLbl: "Signup",
     secondaryBtnLbl: "Login",
+    confirmPassword: false,
   },
 };
 

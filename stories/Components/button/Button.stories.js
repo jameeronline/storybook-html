@@ -26,25 +26,28 @@ export default {
     type: {
       control: { type: "select" },
       description: "Button types",
-      options: ["Primary", "Secondary", "Ghost", "Link"],
+      defaultValue: "primary",
+      options: ["primary", "secondary", "ghost", "link"],
     },
     size: {
       control: { type: "select" },
       description: "Size varients",
-      options: ["Small", "Medium", "Large"],
+      options: ["small", "medium", "large"],
     },
     varient: {
       control: { type: "inline-radio" },
-      options: ["Solid", "Outline"],
+      defaultValue: "solid",
+      options: ["solid", "outline"],
     },
   },
   args: {
     label: "Button",
-    type: "Primary",
-    size: "Medium",
+    type: "primary",
+    size: "medium",
     block: false,
     disabled: false,
     shadow: false,
+    varient: "solid",
   },
   parameters: {
     backgrounds: {
@@ -62,30 +65,37 @@ export const Primary = {
 
 export const Secondary = {
   args: {
-    type: "Secondary",
+    type: "secondary",
   },
 };
 
 export const Ghost = {
   args: {
-    type: "Ghost",
+    type: "ghost",
   },
 };
 
 export const Link = {
   args: {
-    type: "Link",
+    type: "link",
   },
 };
 
 export const Small = {
   args: {
-    size: "Small",
+    size: "small",
   },
 };
 
 export const Large = {
   args: {
-    size: "Large",
+    size: "large",
+  },
+};
+
+export const Block = {
+  name: "Block Button",
+  args: {
+    block: true,
   },
 };

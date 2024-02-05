@@ -5,10 +5,11 @@ import { createCheckbox } from "../../Components/forms/checkbox/Checkbox";
 export const createSignUp = ({
   primaryBtnLbl = "Login",
   secondaryBtnLbl = "Signup",
+  confirmPassword,
 }) => {
   const signupWrapper = document.createElement("div");
-  signupWrapper.className = "absher-signup-form";
-  signupWrapper.innerHTML = "<h2>Welcome to Signup</h2>";
+  signupWrapper.className = "absher-auth-form";
+  signupWrapper.innerHTML = "<h3>Welcome to Signup</h3>";
 
   //append input & button
   signupWrapper.appendChild(
@@ -22,7 +23,7 @@ export const createSignUp = ({
     createInput({
       type: "email",
       label: true,
-      labelText: "email",
+      labelText: "Email",
       placeholder: "Enter Email",
     })
   );
@@ -34,20 +35,23 @@ export const createSignUp = ({
       placeholder: "Enter Password",
     })
   );
-  signupWrapper.appendChild(
-    createInput({
-      type: "password",
-      label: true,
-      labelText: "Confirm Password",
-      placeholder: "Confirm Password",
-    })
-  );
+
+  if (confirmPassword) {
+    signupWrapper.appendChild(
+      createInput({
+        type: "password",
+        label: true,
+        labelText: "Confirm Password",
+        placeholder: "Confirm Password",
+      })
+    );
+  }
 
   signupWrapper.appendChild(
     createButton({ label: primaryBtnLbl, block: true })
   );
   signupWrapper.appendChild(
-    createButton({ label: secondaryBtnLbl, type: "Link", block: true })
+    createButton({ label: secondaryBtnLbl, type: "secondary", block: true })
   );
 
   return signupWrapper;

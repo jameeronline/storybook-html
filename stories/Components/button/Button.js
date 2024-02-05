@@ -2,9 +2,9 @@
 
 export const createButton = ({
   // primary = false,
-  type = "Primary",
-  size = "Medium",
-  varient = "Solid",
+  type = "primary",
+  size = "medium",
+  varient = "solid",
   asChild = "button",
   block,
   shadow,
@@ -32,13 +32,13 @@ export const createButton = ({
   //btn type
   const btnType = () => {
     switch (type) {
-      case "Primary":
-        return varient == "Solid" ? "btn--primary" : "btn--outline-primary";
-      case "Secondary":
-        return varient == "Solid" ? "btn--secondary" : "btn--outline-secondary";
-      case "Ghost":
-        return varient == "Solid" ? "btn--ghost" : "btn--outline-ghost";
-      case "Link":
+      case "primary":
+        return varient == "solid" ? "btn--primary" : "btn--outline-primary";
+      case "secondary":
+        return varient == "solid" ? "btn--secondary" : "btn--outline-secondary";
+      case "ghost":
+        return varient == "solid" ? "btn--ghost" : "btn--outline-ghost";
+      case "link":
         return "btn--link";
       default:
         return "";
@@ -48,12 +48,12 @@ export const createButton = ({
   //btn size
   const btnSize = () => {
     switch (size) {
-      case "Small":
+      case "small":
         return "btn--sm";
-      case "Large":
-        return "btn--lg";
-      case "Medium":
+      case "medium":
         return "btn--md";
+      case "large":
+        return "btn--lg";
       default:
         return "";
     }

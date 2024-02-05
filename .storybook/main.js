@@ -8,6 +8,9 @@ const config = {
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
+    //👈 The a11y addon goes here
+    "@storybook/addon-a11y",
+    "@storybook/addon-mdx-gfm"
   ],
   framework: {
     name: "@storybook/html-vite",

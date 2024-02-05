@@ -19,7 +19,7 @@ export const createHeader = ({ user, onLogout, onLogin, onCreateAccount }) => {
         <path d="M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z" fill="#91BAF8" />
       </g>
     </svg>
-    <h1>Acme</h1>
+    <h1>Storybook HTML</h1>
   </div>`;
 
   wrapper.insertAdjacentHTML("afterbegin", logo);
@@ -29,18 +29,24 @@ export const createHeader = ({ user, onLogout, onLogin, onCreateAccount }) => {
     const welcomeMessage = `<span class="welcome">Welcome, <b>${user.name}</b>!</span>`;
     account.innerHTML = welcomeMessage;
     account.appendChild(
-      createButton({ size: "small", label: "Log out", onClick: onLogout })
+      createButton({
+        label: "Log out",
+        type: "secondary",
+        onClick: onLogout,
+      })
     );
   } else {
     account.appendChild(
-      createButton({ size: "small", label: "Log in", onClick: onLogin })
+      createButton({
+        label: "Log in",
+        onClick: onLogin,
+      })
     );
     account.appendChild(
       createButton({
-        size: "small",
         label: "Sign up",
+        type: "secondary",
         onClick: onCreateAccount,
-        primary: true,
       })
     );
   }

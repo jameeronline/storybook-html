@@ -1,6 +1,6 @@
 import { createButton } from "../../Components/button/Button";
 import { createInput } from "../../Components/Forms/input/Input";
-import { createTextElement } from "../../textElement/TextElement";
+import { createTextElement } from "../../Components/textElement/TextElement";
 
 export const createLogin = ({
   primaryBtnLbl = "Login",
@@ -8,12 +8,8 @@ export const createLogin = ({
 }) => {
   //wrapper
   const loginWrapper = document.createElement("div");
-  loginWrapper.className = "absher-login-form";
-
-  const loginHeader = document.createElement("h3");
-  loginHeader.innerHTML = "<h2>Welcome to Login</h2>";
-
-  loginWrapper.appendChild(loginHeader);
+  loginWrapper.className = "absher-auth-form";
+  loginWrapper.innerHTML = "<h3>Welcome to Login</h3>";
 
   //append input & button
   loginWrapper.appendChild(
@@ -36,7 +32,7 @@ export const createLogin = ({
 
   loginWrapper.appendChild(createButton({ label: primaryBtnLbl, block: true }));
   loginWrapper.appendChild(
-    createButton({ label: secondaryBtnLbl, type: "Secondary", block: true })
+    createButton({ label: secondaryBtnLbl, type: "secondary", block: true })
   );
 
   return loginWrapper;
