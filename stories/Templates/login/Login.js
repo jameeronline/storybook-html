@@ -1,6 +1,6 @@
-import { createButton } from "../../components/button/Button";
-import { createInput } from "../../components/forms/input/Input";
-import { createTextElement } from "../../components/textElement/TextElement";
+import { createButton } from "./../../components/button/Button";
+import { createInput } from "./../../components/forms/input/Input";
+import { createTextElement } from "./../../components/textElement/TextElement";
 import "./login.css";
 
 export const createLogin = ({
