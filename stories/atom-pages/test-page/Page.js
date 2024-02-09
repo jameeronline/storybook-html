@@ -1,5 +1,5 @@
 import "./page.css";
-import { createHeader } from "./Templates/header/Header";
+import { createHeader } from "../../atom-templates/header/Header";
 
 export const createPage = () => {
   const article = document.createElement("article");
