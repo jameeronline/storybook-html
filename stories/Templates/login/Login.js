@@ -1,10 +1,12 @@
 import { createButton } from "../../Components/button/Button";
 import { createInput } from "../../Components/Forms/input/Input";
 import { createTextElement } from "../../Components/textElement/TextElement";
+import "./login.css";
 
 export const createLogin = ({
   primaryBtnLbl = "Login",
   secondaryBtnLbl = "Signup",
+  forgotPassword = true,
 }) => {
   //wrapper
   const loginWrapper = document.createElement("div");
@@ -16,19 +18,25 @@ export const createLogin = ({
     createInput({
       label: true,
       labelText: "Username",
+      size: "large",
       placeholder: "Enter fullname",
     })
   );
   loginWrapper.appendChild(
     createInput({
       type: "password",
+      size: "large",
       label: true,
       labelText: "Password",
       placeholder: "Enter Password",
     })
   );
 
-  loginWrapper.appendChild(createTextElement({ content: "Forgot Password?" }));
+  if (forgotPassword) {
+    loginWrapper.appendChild(
+      createTextElement({ content: "Forgot Password?" })
+    );
+  }
 
   loginWrapper.appendChild(createButton({ label: primaryBtnLbl, block: true }));
   loginWrapper.appendChild(

@@ -42,8 +42,6 @@ export default {
   },
   args: {
     label: "Button",
-    type: "primary",
-    size: "medium",
     block: false,
     disabled: false,
     shadow: false,
@@ -57,9 +55,16 @@ export default {
 };
 
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
+export const Default = {
+  args: {
+    type: "Primary",
+  },
+};
+
 export const Primary = {
   args: {
     type: "Primary",
+    varient: "solid",
   },
 };
 
@@ -94,7 +99,7 @@ export const Large = {
 };
 
 export const Block = {
-  name: "Block Button",
+  name: "Block",
   args: {
     block: true,
   },

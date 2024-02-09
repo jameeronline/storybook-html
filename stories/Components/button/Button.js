@@ -41,7 +41,7 @@ export const createButton = ({
       case "link":
         return "btn--link";
       default:
-        return "";
+        return "btn--primary";
     }
   };
 
@@ -55,7 +55,7 @@ export const createButton = ({
       case "large":
         return "btn--lg";
       default:
-        return "";
+        return "btn--md";
     }
   };
 
