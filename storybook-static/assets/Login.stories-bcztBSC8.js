@@ -1,6 +1,0 @@
-import{c as a}from"./Button-2yV2IObj.js";import{c as o}from"./Input-nGG2D3p-.js";import{c as d}from"./TextElement-pyicg5FG.js";const i=({primaryBtnLbl:t="Login",secondaryBtnLbl:c="Signup"})=>{const e=document.createElement("div");e.className="absher-login-form";const n=document.createElement("h3");return n.innerHTML="<h2>Welcome to Login</h2>",e.appendChild(n),e.appendChild(o({label:!0,labelText:"Username",placeholder:"Enter fullname"})),e.appendChild(o({type:"password",label:!0,labelText:"Password",placeholder:"Enter Password"})),e.appendChild(d({content:"Forgot Password?"})),e.appendChild(a({label:t,block:!0})),e.appendChild(a({label:c,type:"Secondary",block:!0})),e},b={title:"Templates/Login",render:({...t})=>i({...t}),tags:["autodocs"],argsTypes:{primaryBtnLbl:{control:{type:"text"}},secondaryBtnLbl:{control:{type:"text"}}},args:{primaryBtnLbl:"Login",secondaryBtnLbl:"Sign up"}},r={args:{primaryBtnLbl:"Login ",secondaryBtnLbl:"Sign Up"}};var l,s,p;r.parameters={...r.parameters,docs:{...(l=r.parameters)==null?void 0:l.docs,source:{originalSource:`{
-  args: {
-    primaryBtnLbl: "Login ",
-    secondaryBtnLbl: "Sign Up"
-  }
-}`,...(p=(s=r.parameters)==null?void 0:s.docs)==null?void 0:p.source}}};const L=["Default"];export{r as Default,L as __namedExportsOrder,b as default};
