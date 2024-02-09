@@ -1,5 +1,5 @@
-import { createButton } from "../../Components/button/Button";
-import { createInput } from "../../Components/Forms/input/Input";
+import { createButton } from "../../components/button/Button";
+import { createInput } from "../../components/forms/input/Input";
 import { createCheckbox } from "../../Components/forms/checkbox/Checkbox";
 
 export const createSignUp = ({
