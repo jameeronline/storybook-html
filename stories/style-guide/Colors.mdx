@@ -1,5 +1,116 @@
-import { Meta } from "@storybook/blocks";
+import { Meta, ColorPalette, ColorItem, Title  } from "@storybook/blocks";
 
 <Meta title="Styleguide / Colors" />
 
-# Colors
+<Title>Colors</Title>
+
+#### Colors are a crucial aspect of a design system, defining the palette used throughout the interface. Consistent color choices not only establish brand identity but also contribute to visual hierarchy and accessibility.
+
+<hr />
+
+## Primary
+
+#### Primary colors are the foundational hues that represent the core identity of a brand. They are often used for prominent elements like brand logos and key interface components. Primary colors set the overall tone for the design.
+
+<br />
+
+<ColorPalette>
+  <ColorItem
+    title="Primary"
+    colors={{
+    'default': '#00aa66',
+}}
+  />
+  <ColorItem
+    title="Primary Palette"
+    subtitle="Some of the greys"
+    colors={{
+    '50': '#eefff7',
+    '100': '#d7ffee',
+    '200': '#b2ffdf',
+    '300': '#76ffc7',
+    '400': '#33f5a7',
+    '500': '#09de88',
+    '600': '#00aa66',
+    '700': '#04915a',
+    '800': '#0a7149',
+    '900': '#0a5d3e',
+    '950': '#003421',
+}}
+  />
+</ColorPalette>
+
+## Status Colors
+Colors are a crucial aspect of a design system, defining the palette used throughout the interface. Consistent color choices not only establish brand identity but also contribute to visual hierarchy and accessibility.
+
+<ColorItem
+    title="Error"
+    subtitle=""
+    colors={{
+    '50': '#fef2f2',
+    '100': '#fee6e5',
+    '200': '#fccfcf',
+    '300': '#f9a8a8',
+    '400': '#f57779',
+    '500': '#ec474f',
+    '600': '#dc3545',
+    '700': '#b7192c',
+    '800': '#99182c',
+    '900': '#83182c',
+    '950': '#490812',
+}}
+  />
+<ColorItem
+    title="Success"
+    subtitle=""
+    colors={{
+    '50': '#f0fdf6',
+    '100': '#ddfbec',
+    '200': '#bcf6d9',
+    '300': '#88edbd',
+    '400': '#4ddb98',
+    '500': '#25c279',
+    '600': '#19a061',
+    '700': '#198754',
+    '800': '#186340',
+    '900': '#155237',
+    '950': '#062d1c',
+}}
+  />
+
+
+<ColorItem
+    title="Warning"
+    subtitle=""
+    colors={{
+    '50': '#faf7ec',
+    '100': '#f5eccc',
+    '200': '#ecd89c',
+    '300': '#e0bd64',
+    '400': '#d6a339',
+    '500': '#bd872a',
+    '600': '#aa6e24',
+    '700': '#885120',
+    '800': '#724221',
+    '900': '#623821',
+    '950': '#381c10',
+}}
+  />
+
+  <ColorItem
+    title="Info"
+    subtitle=""
+    colors={{
+    '50': '#f0f9fb',
+    '100': '#daeef3',
+    '200': '#b9dde8',
+    '300': '#89c3d7',
+    '400': '#51a1bf',
+    '500': '#3685a4',
+    '600': '#31708f',
+    '700': '#2c5a72',
+    '800': '#2b4b5f',
+    '900': '#284051',
+    '950': '#162936',
+}}
+  />

@@ -4,6 +4,7 @@ export const createBadge = ({
   size = "medium",
   //backgroundColor,
   label,
+  rounded,
   //onClick,
 }) => {
   const badge = document.createElement("span");
@@ -11,15 +12,14 @@ export const createBadge = ({
   badge.innerText = label;
   //badge.addEventListener("click", onClick);
 
-  // const mode =
-  //   type === "primary"
-  //     ? "storybook-badge--primary"
-  //     : type === "secondary"
-  //     ? "storybook-badge--secondary"
-  //     : "storybook-badge--ghost";
-  badge.className = ["badge", "text-bg-danger"].join(" ");
+  //btn type
+  const badgeType = () => {
+    return `text-bg-${type}`;
+  };
 
-  //badge.style.backgroundColor = backgroundColor;
+  badge.className = ["badge", badgeType(), rounded ? "rounded-pill" : ""].join(
+    " "
+  );
 
   return badge;
 };

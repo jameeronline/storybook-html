@@ -1,18 +1,18 @@
-import { createBadge } from "./Badge";
+import { createAlert } from "./Alerts";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories
 export default {
-  title: "Components/Badge",
+  title: "Components/Alert",
   tags: ["autodocs"],
   render: ({ label, ...args }) => {
     // You can either use a function to create DOM elements or use a plain html string!
     // return `<div>${label}</div>`;
-    return createBadge({ label, ...args });
+    return createAlert({ label, ...args });
   },
   argTypes: {
-    //backgroundColor: { control: "color" },
+    title: Boolean,
+    titleText: { control: "text", if: { arg: "title" } },
     label: { control: "text" },
-    //onClick: { action: "onClick" },
     type: {
       control: { type: "select" },
       options: [
@@ -26,12 +26,16 @@ export default {
         "dark",
       ],
     },
-    rounded: Boolean,
+    icon: Boolean,
+    closeBtn: Boolean,
   },
   args: {
-    label: "badge",
     type: "primary",
-    rounded: false,
+    label: "A simple primary alert—check it out!",
+    title: false,
+    titleText: "Alert title",
+    icon: false,
+    closeBtn: false,
   },
 };
 

@@ -1,2 +1,25 @@
-@import "node_modules/bootstrap-icons/fonts/bootstrap-icons.min.css";
+//@import "node_modules/bootstrap-icons/fonts/bootstrap-icons.min.css";
 //@import "node_modules/bootstrap/dist/css/bootstrap.min.css"
+// Custom.scss
+// Option A: Include all of Bootstrap
+$primary: #008550;
+$secondary: #2F4858;
+
+$danger: #C64B3C;
+$success: #68A658;
+$info: #0077DE;
+$warning: #F6E382;
+
+//$body-color: #FFF;
+
+//accordion UI
+$accordion-button-active-color: #FFF;
+$accordion-button-active-bg: $primary;
+$accordion-icon-active-color: #FFF;
+
+@import "bootstrap/scss/bootstrap.scss";
+
+//Overrides
+// .btn{
+//     --
+// }

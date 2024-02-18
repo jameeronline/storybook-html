@@ -7,14 +7,11 @@ export default {
     "Spruce comes with basic button variations like size, width, color, state and can also generate your custom color variants.",
   tags: ["autodocs"],
   render: ({ label, ...args }) => {
-    // You can either use a function to create DOM elements or use a plain html string!
-    // return `<div>${label}</div>`;
     return createButton({ label, ...args });
   },
   argTypes: {
     disabled: Boolean,
     block: Boolean,
-    shadow: Boolean,
     label: { control: "text" },
     onClick: { action: "onClick" },
     asChild: {
@@ -25,14 +22,24 @@ export default {
     },
     type: {
       control: { type: "select" },
-      description: "Button types",
+      description: "Type varient {primary, secondary}",
       defaultValue: "primary",
-      options: ["primary", "secondary", "ghost", "link"],
+      options: [
+        "primary",
+        "secondary",
+        "success",
+        "danger",
+        "warning",
+        "info",
+        "light",
+        "dark",
+        "link",
+      ],
     },
     size: {
       control: { type: "select" },
-      description: "Size varients",
-      options: ["small", "medium", "large"],
+      description: "Size varient {sm, lg}",
+      options: ["sm", "default", "lg"],
     },
     varient: {
       control: { type: "inline-radio" },
@@ -42,10 +49,10 @@ export default {
   },
   args: {
     label: "Button",
+    type: "",
+    varient: "solid",
     block: false,
     disabled: false,
-    shadow: false,
-    varient: "solid",
   },
   parameters: {
     backgrounds: {
@@ -55,16 +62,11 @@ export default {
 };
 
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
-export const Default = {
-  args: {
-    type: "Primary",
-  },
-};
+export const Default = {};
 
 export const Primary = {
   args: {
-    type: "Primary",
-    varient: "solid",
+    type: "primary",
   },
 };
 
@@ -74,9 +76,39 @@ export const Secondary = {
   },
 };
 
-export const Ghost = {
+export const Success = {
   args: {
-    type: "ghost",
+    type: "success",
+  },
+};
+
+export const Danger = {
+  args: {
+    type: "danger",
+  },
+};
+
+export const Warning = {
+  args: {
+    type: "warning",
+  },
+};
+
+export const Info = {
+  args: {
+    type: "info",
+  },
+};
+
+export const Light = {
+  args: {
+    type: "light",
+  },
+};
+
+export const Dark = {
+  args: {
+    type: "dark",
   },
 };
 
@@ -88,13 +120,15 @@ export const Link = {
 
 export const Small = {
   args: {
-    size: "small",
+    size: "sm",
+    type: "primary",
   },
 };
 
 export const Large = {
   args: {
-    size: "large",
+    size: "lg",
+    type: "primary",
   },
 };
 
@@ -102,5 +136,6 @@ export const Block = {
   name: "Block",
   args: {
     block: true,
+    type: "primary",
   },
 };

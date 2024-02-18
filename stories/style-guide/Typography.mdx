@@ -1,5 +1,113 @@
-import { Meta } from "@storybook/blocks";
+import { Meta, Typeset, Title } from "@storybook/blocks";
 
 <Meta title="Styleguide / Typography" />
 
-# Typography
+export const typography = {
+  type: {
+    primary: '"Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif',
+  },
+  weight: {
+    regular: '400',
+    bold: '700',
+    extrabold: '800',
+    black: '900',
+  },
+  size: {
+    display1: 72,
+    display2: 66,
+    display3: 60,
+    heading1: 54,
+    heading2: 48,
+    heading3: 40,
+    heading4: 32,
+    heading5: 24,
+    heading6: 16,
+  },
+};
+
+export const SampleText = 'Display Title';
+
+<Title>Typography</Title>
+
+#### Typography involves the selection and styling of fonts for text elements. A design system provides guidelines on font families, sizes, weights, and spacing to ensure a unified and readable text presentation.
+
+<br />
+
+## **Display Title**
+
+**Font:** Nunito Sans
+
+**Weights:** 400(regular), 700(bold), 800(extrabold), 900(black)
+
+<Typeset
+  fontSizes={[
+    Number(typography.size.display1),
+    Number(typography.size.display2),
+    Number(typography.size.display3),
+  ]}
+  fontWeight={typography.weight.black}
+  sampleText={SampleText}
+  fontFamily={typography.type.primary}
+/>
+
+
+export const SampleHeading = 'Heading Title';
+
+## **Headings**
+
+**Font:** Nunito Sans
+
+**Weights:** 400(regular), 700(bold), 800(extrabold), 900(black)
+
+<Typeset
+  fontSizes={[
+    Number(typography.size.heading1),
+    Number(typography.size.heading2),
+    Number(typography.size.heading3),
+    Number(typography.size.heading4),
+    Number(typography.size.heading5),
+    Number(typography.size.heading6),
+  ]}
+  fontWeight={typography.weight.black}
+  sampleText={SampleHeading}
+  fontFamily={typography.type.primary}
+/>
+
+
+
+export const SampleBody = 'Heading Title';
+export const bodyTypo = {
+  type: {
+    primary: '"Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif',
+  },
+  weight: {
+    regular: '400',
+    bold: '700',
+    extrabold: '800',
+    black: '900',
+  },
+  size: {
+    "body-xl": 20,
+    "body-lg": 16,
+    "body-md": 14,
+    "body-sm": 12,
+  },
+};
+
+## **Paragraph**
+
+**Font:** Nunito Sans
+
+**Weights:** 400(regular), 700(bold), 800(extrabold), 900(black)
+
+<Typeset
+  fontSizes={[
+    Number(bodyTypo.size["body-xl"]),
+    Number(bodyTypo.size["body-lg"]),
+    Number(bodyTypo.size["body-md"]),
+    Number(bodyTypo.size["body-sm"]),
+  ]}
+  fontWeight={typography.weight.black}
+  sampleText={SampleText}
+  fontFamily={typography.type.primary}
+/>

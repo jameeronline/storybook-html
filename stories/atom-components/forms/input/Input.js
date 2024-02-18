@@ -6,6 +6,8 @@ export const createInput = ({
   size,
   label,
   labelText,
+  helpText,
+  helpTextLabel,
 }) => {
   const inputWrapper = document.createElement("div");
   inputWrapper.className = "form-group";
@@ -22,15 +24,20 @@ export const createInput = ({
   input.type = type;
   inputWrapper.insertAdjacentElement("beforeend", input);
 
+  if (helpText) {
+    const helpTextEl = document.createElement("div");
+    helpTextEl.innerText = helpTextLabel;
+    helpTextEl.className = "form-text";
+    inputWrapper.insertAdjacentElement("beforeend", helpTextEl);
+  }
+
   //size
   const inputSize = () => {
     switch (size) {
       case "small":
-        return "form-control--sm";
+        return "form-control-sm";
       case "large":
-        return "form-control--lg";
-      case "medium":
-        return "";
+        return "form-control-lg";
       default:
         return "";
     }

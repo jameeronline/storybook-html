@@ -26,6 +26,11 @@ export default {
       control: "select",
       options: ["small", "medium", "large"],
     },
+    helptext: Boolean,
+    helptextLabel: {
+      control: "text",
+      if: { arg: "helptext" },
+    },
   },
   args: {
     placeholder: "Placeholder",
@@ -34,6 +39,8 @@ export default {
     id: "form-element-id",
     label: false,
     labelText: "label",
+    helptext: false,
+    helptextLabel: "input helptext hint",
   },
 };
 
