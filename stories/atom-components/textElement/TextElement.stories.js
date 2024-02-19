@@ -1,7 +1,7 @@
 import { createTextElement } from "./TextElement";
 
 export default {
-  title: "Typography/Text",
+  title: "Components/Text",
   tags: ["autodocs"],
   render: ({ ...args }) => createTextElement({ ...args }),
   argTypes: {

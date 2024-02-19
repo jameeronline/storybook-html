@@ -37,7 +37,7 @@ export default {
     type: "text",
     name: "form-element-name",
     id: "form-element-id",
-    label: false,
+    label: true,
     labelText: "label",
     helptext: false,
     helptextLabel: "input helptext hint",

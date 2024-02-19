@@ -1,9 +1,19 @@
-import { createOwlCarousel } from "./Owlcarousel";
+import { createGlideJsSlider } from "./Owlcarousel";
+
+import Glide from "@glidejs/glide";
 
 export default {
-  title: "Components/Owlcarousel",
+  title: "Components/Glide JS",
   tags: ["autodocs"],
-  render: () => createOwlCarousel(),
+  render: () => createGlideJsSlider(),
 };
 
-export const Default = {};
+export const Default = {
+  loaders: [
+    async () => {
+      document.addEventListener("DOMContentLoaded", () => {
+        new Glide(".glide").mount();
+      });
+    },
+  ],
+};

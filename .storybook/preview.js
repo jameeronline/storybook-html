@@ -3,10 +3,13 @@
 //global styles import
 import "../src/css/styles.scss";
 
-import "jquery";
+//import "jquery";
 //bootstrap imports
 //import "bootstrap/scss/bootstrap.scss";
 import "bootstrap/dist/js/bootstrap";
+
+//import "~/@glidejs/glide/src/assets/sass/glide.core";
+//import "@glidejs/glide/dist/glide.min.js";
 
 const preview = {
   parameters: {

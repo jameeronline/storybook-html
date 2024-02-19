@@ -22,7 +22,7 @@ export default {
     },
   },
   args: {
-    label: "label",
+    label: "Civil Affairs, Passports, Public Security, General Services",
     isMultiple: false,
     optionsLength: 2,
     isVertical: false,

@@ -5,19 +5,18 @@ export const createRadio = ({
   optionsLength = 1,
 }) => {
   const radioWrapper = document.createElement("div");
-  radioWrapper.className = `form-group ${
-    isVertical ? "form-group--vertical-check" : "form-group--horizontal-check"
-  }`;
+  const checkboxDirection = isVertical ? "form-check-inline" : "";
 
   let radioString = "";
+  const labelGroup = label.split(",");
 
   for (let i = 0; i < optionsLength; i++) {
     radioString += `
-  <label class="form-check">
-    <input class="form-check__control" type="radio" value="own-${
+  <label class="form-check ${checkboxDirection}">
+    <input class="form-check-input" type="radio" value="own-${
       i + 1
     }" name="property-ownership"/>
-    <span class="form-label form-check__label">${label}</span>
+    <span class="form-label form-check-label">${labelGroup[i]}</span>
   </label>
 `;
   }

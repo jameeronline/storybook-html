@@ -1,4 +1,5 @@
-import { Meta, Typeset, Title } from "@storybook/blocks";
+import { Meta, Typeset, Title, Source } from "@storybook/blocks";
+import * as TypoStories from '../atom-components/textElement/TextElement.stories';
 
 <Meta title="Styleguide / Typography" />
 
@@ -50,6 +51,18 @@ export const SampleText = 'Display Title';
   fontFamily={typography.type.primary}
 />
 
+**Code**
+<Source dark code={`
+//Display 1 Heading
+<div class="display-1">Display 1</div>
+
+//Display 2 Heading
+<div class="display-2">Display 2</div>
+
+//Display 3 Heading
+<div class="display-3">Display 3</div>
+`} />
+
 
 export const SampleHeading = 'Heading Title';
 
@@ -73,9 +86,30 @@ export const SampleHeading = 'Heading Title';
   fontFamily={typography.type.primary}
 />
 
+**Code**
+<Source dark code={`
+//Heading 1
+<div class="h-1">Heading 1</div>
+
+//Heading 2
+<div class="h-2">Heading 2</div>
+
+//Heading 3
+<div class="h-3">Heading 3</div>
+
+//Heading 4
+<div class="h-4">Heading 4</div>
+
+//Heading 5
+<div class="h-5">Heading 5</div>
+
+//Heading 6
+<div class="h-6">Heading 6</div>
+`} />
 
 
-export const SampleBody = 'Heading Title';
+
+export const sampleBody = 'Almost before we knew it, we had left the ground. The quick brown fox jumps over the lazy dog.';
 export const bodyTypo = {
   type: {
     primary: '"Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif',
@@ -108,6 +142,21 @@ export const bodyTypo = {
     Number(bodyTypo.size["body-sm"]),
   ]}
   fontWeight={typography.weight.black}
-  sampleText={SampleText}
+  sampleText={sampleBody}
   fontFamily={typography.type.primary}
 />
+
+**Code**
+<Source language="html" dark code={`
+<!-- Body Text - small -->
+<p class="body-sm">Almost before we knew it, we had left the ground. The quick brown fox jumps over the lazy dog.</div>
+
+<!-- Body Text - medium -->
+<p class="body-md">Almost before we knew it, we had left the ground. The quick brown fox jumps over the lazy dog.</div>
+
+<!-- Body Text - lg(regular) -->
+<p class="body-lg">Almost before we knew it, we had left the ground. The quick brown fox jumps over the lazy dog.</div>
+
+<!-- Body Text - xl(lead) -->
+<p class="body-xl">Almost before we knew it, we had left the ground. The quick brown fox jumps over the lazy dog.</div>
+`} />

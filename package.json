@@ -28,18 +28,22 @@
     "@storybook/blocks": "^7.6.16",
     "@storybook/html": "^7.6.16",
     "@storybook/html-vite": "^7.6.16",
+    "@storybook/manager-api": "^7.6.16",
     "@storybook/test": "^7.6.16",
+    "@storybook/theming": "^7.6.16",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sass": "^1.69.7",
     "storybook": "^7.6.16"
   },
   "dependencies": {
+    "@glidejs/glide": "^3.6.0",
     "bootstrap": "^5.3.2",
     "bootstrap-icons": "^1.11.3",
     "classnames": "^2.5.1",
     "jquery": "^3.7.1",
     "owl.carousel": "^2.3.4",
-    "sprucecss": "^2.3.1"
+    "sprucecss": "^2.3.1",
+    "storybook-addon-run-script": "^0.1.4"
   }
 }

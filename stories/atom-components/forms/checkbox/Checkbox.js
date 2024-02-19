@@ -5,19 +5,18 @@ export const createCheckbox = ({
   optionsLength = 1,
 }) => {
   const checkboxWrapper = document.createElement("div");
-  checkboxWrapper.className = `form-group ${
-    isVertical ? "form-group--vertical-check" : "form-group--horizontal-check"
-  }`;
+  const checkboxDirection = isVertical ? "form-check-inline" : "";
 
   let checkboxString = "";
+  const labelGroup = label.split(",");
 
   for (let i = 0; i < optionsLength; i++) {
     checkboxString += `
-  <label class="form-check">
-    <input class="form-check__control" type="checkbox" value="own-${
+  <label class="form-check ${checkboxDirection}">
+    <input class="form-check-input" type="checkbox" value="own-${
       i + 1
     }" name="property-ownership-${i + 1}"/>
-    <span class="form-label form-check__label">${label}</span>
+    <span class="form-label form-check-label">${labelGroup[i]}</span>
   </label>
 `;
   }

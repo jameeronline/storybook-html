@@ -7,22 +7,27 @@ export default {
   argTypes: {
     label: {
       control: { type: "text" },
+      description: "Add multiple label values with ',' as a seperator.",
     },
     isMultiple: {
       control: "boolean",
+      description: "Toggle the multiple checkbox",
     },
     optionsLength: {
       control: "select",
-      options: ["2", "3", "4"],
+      description: "Change the number of checkbox",
+      options: ["1", "2", "3", "4"],
       if: { arg: "isMultiple" },
     },
     isVertical: {
       control: "boolean",
+      description:
+        "change the orientation of the multiple checkbox inline or block",
       if: { arg: "isMultiple" },
     },
   },
   args: {
-    label: "label",
+    label: "Civil Affairs, Passports, Public Security, General Services",
     isMultiple: false,
     optionsLength: 2,
     isVertical: false,
