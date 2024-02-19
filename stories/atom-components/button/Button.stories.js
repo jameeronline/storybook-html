@@ -41,16 +41,12 @@ export default {
       description: "Size varient {sm, lg}",
       options: ["sm", "default", "lg"],
     },
-    varient: {
-      control: { type: "inline-radio" },
-      defaultValue: "solid",
-      options: ["solid", "outline"],
-    },
+    outline: Boolean,
   },
   args: {
     label: "Button",
     type: "",
-    varient: "solid",
+    outline: false,
     block: false,
     disabled: false,
   },

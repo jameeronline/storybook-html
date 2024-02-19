@@ -1,14 +1,4 @@
-import "./header.css";
-import { createButton } from "../../atom-components/button/Button";
-
-export const createHeader = ({ user, onLogout, onLogin, onCreateAccount }) => {
-  const header = document.createElement("header");
-
-  const wrapper = document.createElement("div");
-  wrapper.className = "storybook-header";
-
-  const logo = `<div class="storybook-logo">
-    <svg xmlns="http://www.w3.org/2000/svg" class="absher-logo" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" style="enable-background:new 0 0 411.5 316.4;" xml:space="preserve" viewBox="136.39 67.25 131.81 196.45">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" style="enable-background:new 0 0 411.5 316.4;" xml:space="preserve" viewBox="136.39 67.25 131.81 196.45">
     <style type="text/css">
     .st0 {
         fill-rule: evenodd;
@@ -29,40 +19,4 @@ export const createHeader = ({ user, onLogout, onLogin, onCreateAccount }) => {
         <path class="st0" d="M244.7,253.6c0,4.3-3.6,7.9-7.9,7.9c-4.4,0-8-3.6-8-8c0-4.4,3.5-7.8,7.9-7.8   C241.3,245.7,244.7,249.1,244.7,253.6z"/>
         <path class="st0" d="M268.1,82.3c-5.1,0-10.1,0-15.1,0c-1-7.4,7.4-15.8,15.1-15C268.1,72.2,268.1,77.1,268.1,82.3z"/>
     </g>
-    </svg>
-  </div>`;
-
-  wrapper.insertAdjacentHTML("afterbegin", logo);
-
-  const account = document.createElement("div");
-  if (user) {
-    const welcomeMessage = `<span class="welcome">Welcome, <b>${user.name}</b>!</span>`;
-    account.innerHTML = welcomeMessage;
-    account.appendChild(
-      createButton({
-        label: "Log out",
-        type: "secondary",
-        onClick: onLogout,
-      })
-    );
-  } else {
-    account.appendChild(
-      createButton({
-        label: "Log in",
-        type: "primary",
-        onClick: onLogin,
-      })
-    );
-    account.appendChild(
-      createButton({
-        label: "Sign up",
-        type: "secondary",
-        onClick: onCreateAccount,
-      })
-    );
-  }
-  wrapper.appendChild(account);
-  header.appendChild(wrapper);
-
-  return header;
-};
+</svg>

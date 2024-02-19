@@ -3,10 +3,10 @@ export const createHyperPay = () => {
   hyperpayEl.id = "hyperpay-init";
   //hyperpayEl.innerText = "Hyperpay Element";
 
-  hyperpayEl.insertAdjacentHTML(
-    "beforeend",
-    '<form action="https://absher.sa" class="paymentWidgets" data-brands="AMEX MADA MASTER VISA"></form>'
-  );
+  // hyperpayEl.insertAdjacentHTML(
+  //   "beforeend",
+  //   '<form action="https://absher.sa" class="paymentWidgets" data-brands="AMEX MADA MASTER VISA"></form>'
+  // );
 
   return hyperpayEl;
 };

@@ -30,3 +30,18 @@
   font-size: 14px;
   margin-right: 10px;
 }
+
+.storybook-logo .absher-logo{
+  width: 40px;
+  display: inline-block;
+}
+
+.storybook-header h1{
+  display: inline-block;
+}
+
+.storybook-logo{
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}

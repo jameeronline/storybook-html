@@ -2,7 +2,7 @@ export const createButton = ({
   // primary = false,
   type = "primary",
   size,
-  varient,
+  outline,
   asChild = "button",
   block,
   disabled,
@@ -27,37 +27,10 @@ export const createButton = ({
   btn.addEventListener("click", onClick);
 
   const btnType = () => {
-    const variantClass =
-      varient === "solid" ? `btn-${type}` : `btn-outline-${type}`;
+    const variantClass = outline ? `btn-outline-${type}` : `btn-${type}`;
 
     return type === "link" ? "btn-link" : `${variantClass}`;
   };
-
-  //btn type
-  // const btnType = () => {
-  //   switch (type) {
-  //     case "primary":
-  //       return varient == "solid" ? "btn-primary" : "btn-outline-primary";
-  //     case "secondary":
-  //       return varient == "solid" ? "btn-secondary" : "btn-outline-secondary";
-  //     case "success":
-  //       return varient == "solid" ? "btn-success" : "btn-outline-success";
-  //     case "danger":
-  //       return varient == "solid" ? "btn-danger" : "btn-outline-danger";
-  //     case "warning":
-  //       return varient == "solid" ? "btn-warning" : "btn-outline-warning";
-  //     case "info":
-  //       return varient == "solid" ? "btn-info" : "btn-outline-info";
-  //     case "light":
-  //       return varient == "solid" ? "btn-light" : "btn-outline-light";
-  //     case "dark":
-  //       return varient == "solid" ? "btn-dark" : "btn-outline-dark";
-  //     case "link":
-  //       return "btn-link";
-  //     default:
-  //       return "";
-  //   }
-  // };
 
   //btn size
   const btnSize = () => {

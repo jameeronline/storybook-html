@@ -20,7 +20,7 @@ export default {
 
 export const Default = {
   args: {
-    primaryBtnLbl: "Sign",
+    primaryBtnLbl: "Sign Up",
     secondaryBtnLbl: "Login",
   },
 };
