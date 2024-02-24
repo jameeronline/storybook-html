@@ -1,6 +1,8 @@
 import "./header.css";
 import { createButton } from "../../atom-components/button/Button";
 
+import AbsherLogo from "../../assets/absher.svg";
+
 export const createHeader = ({ user, onLogout, onLogin, onCreateAccount }) => {
   const header = document.createElement("header");
 

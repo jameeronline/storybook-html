@@ -26,10 +26,10 @@ export default {
       control: "select",
       options: ["small", "medium", "large"],
     },
-    helptext: Boolean,
-    helptextLabel: {
+    helpText: Boolean,
+    helpTextLabel: {
       control: "text",
-      if: { arg: "helptext" },
+      if: { arg: "helpText" },
     },
   },
   args: {
@@ -39,8 +39,8 @@ export default {
     id: "form-element-id",
     label: true,
     labelText: "label",
-    helptext: false,
-    helptextLabel: "input helptext hint",
+    helpText: false,
+    helpTextLabel: "input help text hint",
   },
 };
 

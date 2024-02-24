@@ -11,6 +11,7 @@ const config = {
     //👈 The a11y addon goes here
     "@storybook/addon-a11y",
     "@storybook/addon-mdx-gfm",
+    "@storybook/addon-viewport",
   ],
   framework: {
     name: "@storybook/html-vite",

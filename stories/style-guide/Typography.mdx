@@ -1,8 +1,9 @@
-import { Meta, Typeset, Title, Source } from "@storybook/blocks";
+import { Meta, Typeset, Title, Subtitle, Description, Source, Unstyled } from "@storybook/blocks";
 import * as TypoStories from '../atom-components/textElement/TextElement.stories';
 
 <Meta title="Styleguide / Typography" />
 
+<Unstyled>
 export const typography = {
   type: {
     primary: '"Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif',
@@ -28,11 +29,11 @@ export const typography = {
 
 export const SampleText = 'Display Title';
 
-<Title>Typography</Title>
+<h1 className="display-4">Typography</h1>
 
-#### Typography involves the selection and styling of fonts for text elements. A design system provides guidelines on font families, sizes, weights, and spacing to ensure a unified and readable text presentation.
+<p className="lead">Typography involves the selection and styling of fonts for text elements. A design system provides guidelines on font families, sizes, weights, and spacing to ensure a unified and readable text presentation.</p>
 
-<br />
+<hr />
 
 ## **Display Title**
 
@@ -51,7 +52,7 @@ export const SampleText = 'Display Title';
   fontFamily={typography.type.primary}
 />
 
-**Code**
+<Subtitle>Code</Subtitle>
 <Source dark code={`
 //Display 1 Heading
 <div class="display-1">Display 1</div>
@@ -86,7 +87,7 @@ export const SampleHeading = 'Heading Title';
   fontFamily={typography.type.primary}
 />
 
-**Code**
+<Subtitle>Code</Subtitle>
 <Source dark code={`
 //Heading 1
 <div class="h-1">Heading 1</div>
@@ -146,7 +147,7 @@ export const bodyTypo = {
   fontFamily={typography.type.primary}
 />
 
-**Code**
+<Subtitle>Code</Subtitle>
 <Source language="html" dark code={`
 <!-- Body Text - small -->
 <p class="body-sm">Almost before we knew it, we had left the ground. The quick brown fox jumps over the lazy dog.</div>
@@ -160,3 +161,5 @@ export const bodyTypo = {
 <!-- Body Text - xl(lead) -->
 <p class="body-xl">Almost before we knew it, we had left the ground. The quick brown fox jumps over the lazy dog.</div>
 `} />
+
+</Unstyled>

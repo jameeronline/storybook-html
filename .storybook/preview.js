@@ -6,7 +6,7 @@ import "../src/css/styles.scss";
 //import "jquery";
 //bootstrap imports
 //import "bootstrap/scss/bootstrap.scss";
-import "bootstrap/dist/js/bootstrap";
+//import "bootstrap/dist/js/bootstrap";
 
 const preview = {
   parameters: {

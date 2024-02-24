@@ -5,6 +5,7 @@ export const createRadio = ({
   optionsLength = 1,
 }) => {
   const radioWrapper = document.createElement("div");
+  radioWrapper.className = "form-check-group";
   const checkboxDirection = isVertical ? "form-check-inline" : "";
 
   let radioString = "";

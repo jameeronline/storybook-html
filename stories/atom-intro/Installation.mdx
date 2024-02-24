@@ -1,13 +1,13 @@
-import { Meta, Source, Title, Description, Subtitle } from "@storybook/blocks";
+import { Meta, Source, Title, Description, Subtitle, Unstyled } from "@storybook/blocks";
 
 <Meta title="Getting Started / Installation" />
+<Unstyled>
+<h1 className="display-4">Introduction</h1>
 
-# Introduction
-
-#### A design system is a comprehensive set of guidelines, components, and assets that work together to create a unified and consistent user experience across digital products. It serves as a central repository for design and development resources, ensuring cohesion in the visual and functional aspects of a project.
+<p className="lead">A design system is a comprehensive set of guidelines, components, and assets that work together to create a unified and consistent user experience across digital products. It serves as a central repository for design and development resources, ensuring cohesion in the visual and functional aspects of a project.</p>
 
 <br />
-## **Why Use a Design System?**
+##### **Why Use a Design System?**
 
 - **Consistency:** Establishes a unified look and feel, reinforcing brand identity and recognition.
 - **Efficiency:** Speeds up the design and development process by providing reusable components and styles.
@@ -51,3 +51,52 @@ To get started with our design system, follow these steps:
   </body>
 </html>
 `} />
+
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td colspan="2">Larry the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Email address</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"/>
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
+
+
+   <h1 class="display-1">Display 1</h1>
+   <h1 class="display-2">Display 2</h1>
+   <h1 class="display-3">Display 3</h1>
+   <h1 class="display-4">Display 4</h1>
+   <h1 class="display-5">Display 5</h1>
+   <h1 class="display-6">Display 6</h1>
+</Unstyled>

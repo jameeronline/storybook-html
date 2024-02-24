@@ -5,6 +5,7 @@ export const createCheckbox = ({
   optionsLength = 1,
 }) => {
   const checkboxWrapper = document.createElement("div");
+  checkboxWrapper.className = "form-check-group";
   const checkboxDirection = isVertical ? "form-check-inline" : "";
 
   let checkboxString = "";
