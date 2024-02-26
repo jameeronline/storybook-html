@@ -1,9 +1,10 @@
-import { createWelcomePage } from "./Welcome";
+import { createWelcome } from "./Welcome";
+import * as ButtonStories from "../../atom-components/button/Button.stories";
 
 export default {
   title: "Pages/Welcome",
   tags: ["autodocs"],
-  render: ({ ...args }) => createWelcomePage({ ...args }),
+  render: ({ ...args }) => createWelcome({ ...args }),
   argTypes: {
     servieTitle: { control: "text" },
     // mainBtnLbl: ButtonStories.default.args.label,

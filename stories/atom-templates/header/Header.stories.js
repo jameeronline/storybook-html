@@ -4,7 +4,7 @@ export default {
   title: "Templates/Header",
   // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
   tags: ["autodocs"],
-  render: (args) => createHeader(args),
+  render: ({ ...args }) => createHeader({ ...args }),
   parameters: {
     // More on how to position stories at: https://storybook.js.org/docs/configure/story-layout
     layout: "fullscreen",
@@ -14,6 +14,11 @@ export default {
     onLogin: { action: "onLogin" },
     onLogout: { action: "onLogout" },
     onCreateAccount: { action: "onCreateAccount" },
+  },
+  args: {
+    user: {
+      name: "Jamal Ameer",
+    },
   },
 };
 

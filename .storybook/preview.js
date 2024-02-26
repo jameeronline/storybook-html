@@ -11,9 +11,31 @@ import "bootstrap/dist/js/bootstrap";
 const preview = {
   parameters: {
     //layout: "centered",
+    options: {
+      storySort: {
+        order: [
+          "Getting Started",
+          "Styleguide",
+          "Components",
+          "Forms",
+          "Templates",
+          "Pages",
+          [
+            "Welcome",
+            "Form",
+            "Datatable",
+            "Confirmation",
+            "Payment",
+            "Success",
+          ],
+          "*",
+        ],
+      },
+    },
     backgrounds: {
+      default: "light",
       values: [
-        { name: "light", value: "#fff" },
+        { name: "light", value: "#f8f8f8" },
         { name: "dark", value: "#333" },
       ],
     },

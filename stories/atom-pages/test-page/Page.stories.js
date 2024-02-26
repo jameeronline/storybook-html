@@ -2,7 +2,7 @@ import { within, userEvent, expect } from "@storybook/test";
 import { createPage } from "./Page";
 
 export default {
-  title: "Pages/Sample Page",
+  title: "Playground/Sample Page",
   render: () => createPage(),
   parameters: {
     // More on how to position stories at: https://storybook.js.org/docs/configure/story-layout

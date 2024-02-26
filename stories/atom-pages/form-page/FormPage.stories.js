@@ -1,9 +1,9 @@
-import { createWelcomePage } from "./Welcome";
+import { createFormPage } from "./FormPage";
 
 export default {
-  title: "Pages/Welcome",
+  title: "Pages/Form",
   tags: ["autodocs"],
-  render: ({ ...args }) => createWelcomePage({ ...args }),
+  render: ({ ...args }) => createFormPage({ ...args }),
   argTypes: {
     servieTitle: { control: "text" },
     // mainBtnLbl: ButtonStories.default.args.label,
