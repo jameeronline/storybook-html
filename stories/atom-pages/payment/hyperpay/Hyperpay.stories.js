@@ -1,8 +1,8 @@
 import { createHyperPay } from "./Hyperpay";
 
 export default {
-  title: "Payment/Hyperpay",
-  tags: ["autodocs"],
+  title: "Pages/Payment",
+  // tags: ["autodocs"],
   render: () => createHyperPay(),
 };
 

@@ -5,7 +5,7 @@ import localeEn from "air-datepicker/locale/en";
 import "air-datepicker/air-datepicker.css";
 
 export default {
-  title: "Components/Nice Select",
+  title: "Vendor/Nice Select",
   tags: ["autodocs"],
   render: () => createNiceSelect(),
   loaders: [

@@ -3,7 +3,7 @@ import { createGlideJsSlider } from "./Glidejs";
 import Glide from "@glidejs/glide";
 
 export default {
-  title: "Components/Glide JS",
+  title: "Vendor/Glide JS",
   tags: ["autodocs"],
   render: () => createGlideJsSlider(),
   loaders: [

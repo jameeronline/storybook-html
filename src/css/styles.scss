@@ -6,8 +6,15 @@
 //@use 'sprucecss/scss/spruce' as *;
 //@include generate-styles;
 
+@import "datatables.net-dt/css/dataTables.dataTables.css";
+
+//service specifi styles
 @import "./service-styles/service-variables.css";
 @import "./service-styles/service-styles.css";
+@import "./service-styles/service-datatable.css";
+
+//fontello styles
+@import "./vendor/fontello/fontello.css";
 
 body{
     background-color: #f8f8f8;

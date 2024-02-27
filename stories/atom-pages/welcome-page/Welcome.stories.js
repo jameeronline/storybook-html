@@ -2,7 +2,7 @@ import { createWelcomePage } from "./Welcome";
 
 export default {
   title: "Pages/Welcome",
-  tags: ["autodocs"],
+  // tags: ["autodocs"],
   render: ({ ...args }) => createWelcomePage({ ...args }),
   argTypes: {
     servieTitle: { control: "text" },

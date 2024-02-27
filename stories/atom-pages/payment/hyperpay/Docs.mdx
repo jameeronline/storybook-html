@@ -1,0 +1,40 @@
+import { Meta, Subtitle, Primary, Controls, Unstyled, Source } from '@storybook/blocks';
+import * as HyperpayStories from './Hyperpay.stories';
+
+<Meta of={HyperpayStories} />
+
+{/* Page Meta Information */}
+<Unstyled>
+    <h1 className="display-6 mb-16">Payment Page - Hyper Pay</h1>
+    <p>The Payment Page is integrated with a secure payment gateway, displaying the service fee and any additional charges. Users can securely and conveniently complete the payment process, ensuring a smooth transition from information submission to the finalization of the service request. This page prioritizes user privacy and transaction security.</p>
+</Unstyled>
+
+{/* Primary Component Preview */}
+<Primary />
+
+{/* Code Snippets */}
+{/* Page Meta Information */}
+<Unstyled>
+<h4 className="mb-16">Steps to Follow</h4>
+<br />
+<h6 className="mb-16 fw-bold">Include Payment Script</h6>
+<p>It handles everything from user authentication to payment processing, ensuring a smooth and secure transaction.</p>
+<Source dark code={`
+<!-- Include the [xxx] payment gateway script JS -->
+<script type="text/javascript" src="https://test.oppwa.com/v1/paymentWidgets.js?checkoutId[add checkout iD]"></script>
+    `
+} />
+<h6 className="mb-16 fw-bold">Include Payment UI Layer</h6>
+<p>The Payment Wrapper serves as the container or placeholder responsible for rendering the visual elements of the payment user interface (UI). It encapsulates the presentation layer of the payment process, displaying the relevant fields, buttons, and feedback to the user.</p>
+<Source dark code={`
+<!-- Widget START --->
+<div class="ab-hyperpay-widget">
+    <form action="[url]" class="paymentWidgets" data-brands="[brands]">Payment Widget</form>
+</div>
+<!-- Widget END --->    
+`} />
+</Unstyled>
+
+{/* Control Section */}
+{/* <Subtitle>Props</Subtitle>
+<Controls /> */}

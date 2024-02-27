@@ -10,16 +10,16 @@ export function createFormPage({ servieTitle, ...args }) {
       <div class="common-body">
           <div class="service-sub-container">
               <div class="service-sub-header">
-                  <label>Service Page - Form</label>
+                  <label>${servieTitle}</label>
               </div>
 
               <div class="service-sub-body">
                   <div class="service-progressbar">
                       <ul id="progressbar">
-                          <li class="active"><label>Resident Information</label></li>
-                          <li class=""><label>Resident ID period</label></li>
-                          <li class=""><label>Select Delivery Address</label></li>
-                          <li class=""><label>Review and Confirm</label></li>
+                          <li class="active"><label>Active</label></li>
+                          <li class=""><label>Next Step</label></li>
+                          <li class=""><label>Next Step</label></li>
+                          <li class=""><label>Final</label></li>
                       </ul>
                   </div>
 

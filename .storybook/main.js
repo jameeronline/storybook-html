@@ -20,6 +20,7 @@ const config = {
   staticDirs: ["../src/assets"],
   docs: {
     autodocs: "tag",
+    toc: true,
   },
 };
 export default config;

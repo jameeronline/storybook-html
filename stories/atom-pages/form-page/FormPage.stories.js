@@ -2,7 +2,7 @@ import { createFormPage } from "./FormPage";
 
 export default {
   title: "Pages/Form",
-  tags: ["autodocs"],
+  // tags: ["autodocs"],
   render: ({ ...args }) => createFormPage({ ...args }),
   argTypes: {
     servieTitle: { control: "text" },
@@ -10,7 +10,7 @@ export default {
     // subBtnLbl: ButtonStories.default.args.label,
   },
   args: {
-    servieTitle: "Welcome",
+    servieTitle: "Service Page - Form",
     // mainBtnLbl: "Start",
     // subBtnLbl: "View Request",
   },
