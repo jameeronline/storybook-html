@@ -11,7 +11,7 @@ export default {
   loaders: [
     async () => {
       document.addEventListener("DOMContentLoaded", () => {
-        table?.destroy();
+        table.destroy();
 
         let table = new DataTable("#dataTable", {
           responsive: true,
