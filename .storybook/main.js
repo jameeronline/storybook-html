@@ -12,6 +12,8 @@ const config = {
     "@storybook/addon-a11y",
     "@storybook/addon-mdx-gfm",
     "@storybook/addon-viewport",
+    "@storybook/addon-storysource",
+    "storybook-addon-rtl-direction",
   ],
   framework: {
     name: "@storybook/html-vite",
@@ -22,5 +24,8 @@ const config = {
     autodocs: "tag",
     toc: true,
   },
+  // core: {
+  //   builder: "@storybook/builder-vite", // 👈 The builder enabled here.
+  // },
 };
 export default config;

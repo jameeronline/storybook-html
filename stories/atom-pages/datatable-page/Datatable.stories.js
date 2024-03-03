@@ -11,7 +11,7 @@ export default {
   loaders: [
     async () => {
       document.addEventListener("DOMContentLoaded", () => {
-        table.destroy();
+        //table.destroy();
 
         let table = new DataTable("#dataTable", {
           responsive: true,
@@ -21,6 +21,4 @@ export default {
   ],
 };
 
-export const Default = {
-  play: async () => {},
-};
+export const Default = {};

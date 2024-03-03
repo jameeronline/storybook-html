@@ -16,8 +16,6 @@ const preview = {
         order: [
           "Getting Started",
           "Styleguide",
-          "Components",
-          "Forms",
           "Pages",
           [
             "Welcome",
@@ -27,6 +25,8 @@ const preview = {
             "Payment",
             "Success",
           ],
+          "Components",
+          "Forms",
           "Templates",
           "*",
         ],
@@ -52,3 +52,33 @@ const preview = {
 };
 
 export default preview;
+
+// preview.js
+
+// export const globalTypes = {
+//   locale: {
+//     name: "Locale",
+//     description: "Internationalization locale",
+//     defaultValue: "en",
+//     toolbar: {
+//       icon: "globe",
+//       items: [
+//         { value: "en-US", right: "LTR", title: "English (United States)" },
+//         { value: "es", right: "LTR", title: "Spanish" },
+//         { value: "ar", right: "RTL", title: "Arabic" },
+//         { value: "ar-OM", right: "RTL", title: "Arabic (Oman)" },
+//         { value: "pa-IN", right: "LTR", title: "Punjabi (India)" },
+//         { value: "pa-PK", right: "RTL", title: "Punjabi (Pakistan)" },
+//       ],
+//     },
+//   },
+// };
+
+// export const parameters = {
+//   rtlDirection: {
+//     // Collection to set as RTL (You can add language or with add country code specifically)
+//     autoLocales: ["ar", "pa-PK"],
+//     // Condition to reload the page each time locale is updated
+//     reload: true,
+//   },
+// };
