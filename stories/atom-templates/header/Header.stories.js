@@ -17,7 +17,7 @@ export default {
   },
   args: {
     user: {
-      name: "Jamal Ameer",
+      name: "User",
     },
   },
 };
@@ -25,7 +25,7 @@ export default {
 export const LoggedIn = {
   args: {
     user: {
-      name: "Jamal Ameer",
+      name: "User",
     },
   },
 };
