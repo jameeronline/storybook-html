@@ -1,10 +1,8 @@
-export function createDataTablePage() {
+export function createDataTablePage({ servieTitle, ...args }) {
   const datatableEl = document.createElement("div");
   datatableEl.className = "service-table-container";
 
-  datatableEl.insertAdjacentHTML(
-    "beforeend",
-    `
+  const dataTableHTML = `
   <table id="dataTable" class="display dt-responsive" style="width:100%">
     <thead>
         <tr>
@@ -365,6 +363,25 @@ export function createDataTablePage() {
         </tr>
     </tfoot>
   </table>
+  `;
+
+  datatableEl.insertAdjacentHTML(
+    "beforeend",
+    `
+    <div id="eservice-container" class="service-main-container">
+        <div class="common-body">
+            <div class="service-sub-container welcomeMessage">
+                <div class="service-sub-header">
+                <!-- Add Service main title -->
+                <label>${servieTitle}</label>
+                </div>
+
+                <div class="service-sub-body">
+                ${dataTableHTML}
+                </div>
+            </div>
+        </div>
+    </div>
   `
   );
   return datatableEl;

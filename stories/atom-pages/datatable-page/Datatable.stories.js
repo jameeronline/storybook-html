@@ -19,6 +19,15 @@ export default {
       });
     },
   ],
+  play: () => {},
+  argTypes: {
+    servieTitle: { control: "text" },
+    // mainBtnLbl: ButtonStories.default.args.label,
+    // subBtnLbl: ButtonStories.default.args.label,
+  },
+  args: {
+    servieTitle: "Service Page - Data Table",
+  },
 };
 
 export const Default = {};
